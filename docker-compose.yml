@@ -1,6 +1,9 @@
 version: "3.9"
 services:
-  php:
-    build: php
-    ports: 
-      - 8080:80
+    db:
+        image: mongo
+
+    lab1:
+        build: SPP-1-main
+        ports:
+            - 3000:3000
